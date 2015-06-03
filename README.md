@@ -17,12 +17,12 @@ gcc -O2 -Wall -o msiso msiso.c -lm
 
 #### Usage
 
-All commands and options associated with Hudson's ms are avaialable in msmove, see the ms documentation for more details on these commands. msmove includes an additional command which allows for control of the timing and rate of migration. Simulations in which migration has occurred are reported along with the standard ms output.
+All commands and options associated with Hudson's ms are available in msmove, see the ms documentation for more details on these commands. msmove includes an additional command which allows for control of the timing and rate of migration. Simulations in which migration has occurred are reported along with the standard ms output.
 
 ```
 msmove nsam howmany [other ms options options] -ev t i j x
 ```
-This command moves lineages at time t from pop i into pop j with probability x. Population size, alpha, and M are unchanged. If less than x lineages are present in pop i, then all lineages are moved.
+This command moves lineages at time t from pop i into pop j with probability x. Population size, alpha, and M are unchanged. If less than i*x lineages are present in pop i, then all lineages are moved.
 
 The output is identical to ms output with one addition. If an introgression event occurred in a particular replicate a '*' is added after the '//' that indicates the start of a set of results. 
 
