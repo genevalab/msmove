@@ -3,13 +3,13 @@ msmove
 
 A modified version of Hudson's coalescent simulator ms allowing for finer control and tracking of migrant genealogies.
 
-####To build msmove
+#### To build msmove
 ```
 make
 ```
 The binary will be located in a directory named gccRelease.
 
-####To build msiso
+#### To build msiso
 ```
 gcc -O2 -Wall -o msiso msiso.c -lm
 ```
@@ -34,7 +34,7 @@ msmove 20 100 -t 10 -I 2 10 10 -r 100 10000 -ej 1 2 1 -ev  0.01 2 1 0.01
 should produce around 10-20 replicates for which migration has occurred
 
 ======
-####Citation
+#### Citation
 
 Users should cite the original description of ms. The manual and source for ms are available [here](https://webshare.uchicago.edu/xythoswfs/webview/fileManager?stk=7EB767DDE194BCF&entryName=%2Fusers%2Frhudson1%2FPublic%2Fms.folder&msgStatus=).   
    * Hudson, R. R. (2002) Generating samples under a Wright-Fisher neutral model. Bioinformatics. 18:337-8.
